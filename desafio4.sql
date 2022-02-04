@@ -1,6 +1,6 @@
 SELECT
 	usu.usuario,
-  IF(MAX(YEAR(his.data_reproducao)) >= 2021, 'Usuário ativo', 'Usuário inativo')
+  IF(MAX(YEAR(his.data_reproducao)) >= 2021, 'Usuário ativo', 'Usuário inativo') AS condicao_usuario
 FROM
 	SpotifyClone.usuarios as usu
 INNER JOIN
